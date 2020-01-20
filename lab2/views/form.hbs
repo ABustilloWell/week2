@@ -1,0 +1,49 @@
+<!--The form page should do the following:
+
+Create a simple form that will collect the following fields. (No validation needed)
+Name 
+email
+comments (textarea)
+On the submit page display the results of the entered fields with bold labels to a results page.
+Make sure to have the navigation links as well.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Lab 2 - Angie Well - Form Page</title>
+</head>
+<body>
+    
+    <h1>Welcome to the Form Page:</h1>
+    <br>
+
+    <form action="/results" method="post">
+        Name: <input type="text" name="first">
+        <br>
+        Email:   <input type="text" name="email">
+        <br>
+        Comments:
+        <br>
+        <textarea rows="4" cols="50" name="comment"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <br>
+   
+
+    <h2>Links:</h2>
+     <ul>
+            <li><a href="http://localhost:3000/index">Index Page</a>  </li>
+            <li><a href="http://localhost:3000/form">Form Page </a>  </li>
+            <li><a href="http://localhost:3000/about"> About Page </a></li>
+    </ul>
+
+    {{> footer}}
+
+    
+</body>
+</html>
